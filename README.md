@@ -83,7 +83,7 @@ PASSWORD = False
 if not PASSWORD:
 	print("Error: You need to define PASSWORD at line 58")
 	exit()
-ActiveRecord.connect("postgres", "example", SET_THIS_PASSWORD_HERE)
+ActiveRecord.connect("postgres", "example", PASSWORD)
 ##
 # Load ActiveRecord definitions
 ##
