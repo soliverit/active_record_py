@@ -1,5 +1,5 @@
 # active_record_py
-Python Psql ORM
+A lightweight Python PostgreSQL ORM
 
 ## Features
   - Dynamically creates Python object model for inheriting classes
@@ -10,17 +10,29 @@ Python Psql ORM
 
 ## Overview
 
-ActiveRecord is an object-relational manager for Python and Postgresql. Like any ORM, it dynamically defines object models in Python. The running themes are don't repeat yourself and easy access.
+ActiveRecord is an object-relational manager for Python and Postgresql. Like any ORM, it dynamically defines object models in Python. The running themes are don't repeat yourself and easy access. If you need a hardcore ORM, this probably isn't for you. If just want an easy-to-use ORM that doesn't demand much hardcoding on your part then dive in!
 
 ## Dependencies
   - psycopg2 (Psql binding)
   - colorama (Prettifying console outputs:... Ok, yeah, in hindsight this was great for me but bad for others. I'll write it out or something later)
-  
  
 ## Getting started
 
 Dump the contents of `./lib/` into your project's lib/src or whatever folder. (Again, the separate files is a bit of a bugger for others, but I'll sort it at some point)
 
+### Example
+#### Psql 
+In order to run the example, you'll need create the "example" database and "tv_shows" table.
+
+```psql
+CREATE DATABASE example;
+CREATE TABLE tv_shows(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR NOT NULL,
+	year INT NOT NULL,
+	coment VARCHAR
+);
+```
 Below outlines its basic use. The content is taken from `./example.py`. 
 ```ruby
 
