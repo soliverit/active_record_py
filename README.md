@@ -4,6 +4,7 @@ A lightweight Python PostgreSQL ORM
 ## Features
   - Dynamically creates Python object model for inheriting classes
   - SELECT, UPDATE and INSERT psql interactions
+  - Class level connection binding
   - Asynchonous, cursor queries
   - Object validation
   - Query sanitation
