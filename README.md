@@ -38,7 +38,7 @@ Below outlines its basic use. The content is taken from `./example.py`.
 
 from lib.active_record import ActiveRecord
 ####################################
-# Create an example class
+# Getting started
 ####################################
 print("""
 ##
